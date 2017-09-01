@@ -1,0 +1,22 @@
+{
+  "name": "tricho",
+  "version": "0.1.0",
+  "description": "Tricho CSS framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/tricho.css css/tricho.css",
+    "build-sass": "node-sass --output-style expanded --source-map true tricho.sass css/tricho.css",
+    "start": "npm run build-sass -- --watch"
+  },
+  "devDependencies": {
+    "auto-prefixer": "^0.4.2",
+    "autoprefixer": "^7.1.3",
+    "node-sass": "^4.5.3"
+  },
+  "author": "Carl-Fredrik Herö",
+  "license": "MIT"
+}
