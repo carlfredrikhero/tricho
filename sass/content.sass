@@ -1,0 +1,8 @@
+$el-map: div, ul, table
+
+.content
+  margin-bottom: $gap
+
+  @each $el in $el-map
+    > #{$el}:not(:last-child)
+        margin-bottom: $gap

@@ -1,0 +1,39 @@
+$button-height: #{$vertical-height + 1}rem
+
+.button
+  display: inline-flex
+  align-items: center
+  font-family: inherit
+  font-size: inherit
+  height: $button-height
+  cursor: pointer
+  padding:
+    top: $gap/3
+    right: $gap
+    bottom: $gap/3
+    left: $gap
+  margin:
+    top: $gap/6
+    bottom: $gap/6
+  border-radius: $radius
+
+  background: $white
+  color: $text-color
+  border: $border-width solid $border-color
+  box-shadow: $shadow
+
+  &:hover
+    box-shadow: $shadow-hover
+    border-color: $border-color-hover
+    transition: .25s all
+
+  & + .button
+    margin-left: $gap/2
+
+  &.is-primary
+    background-color: $primary
+    border-color: transparent
+    color: $white
+
+    &:hover
+      background-color: darken($primary, 5%)

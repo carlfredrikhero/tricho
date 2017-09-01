@@ -11,6 +11,7 @@ Default vertical grid: 24px
  - [ ] Content
  - [ ] Buttons
  - [ ] Grid
+ - [ ] Tables
 
 ## Content
 

@@ -3,13 +3,40 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/tricho.css">
 </head>
-<body>
-  <input type="checkbox" id="grid" checked>
-  <div class="grid"></div>
-  <label id="grid-toggle" for="grid">Toggle grid</label>
+<body class="grid">
+  <a href="javascript: void(0);" id="grid-toggler" onclick="javascript:body.classList.toggle('grid');">
+    Toggle
+  </a>
   <div class="container">
     <h1>H1 Tricho</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
+
+    <div class="content">
+      <p>This is a content element with lots of stuff in it.</p>
+      <div>This is a div</div>
+      <ul>
+        <li>A list of items</li>
+        <li>A list of items</li>
+      </ul>
+      <p>
+        <a href="#" class="button">Button</a>
+        <button type="button" class="button">Button-element</button>
+        <a href="#" class="button is-primary">Primary button</a>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Table head</th>
+          </tr>
+        </thead>
+        <body>
+          <tr>
+            <td>Table data</td>
+          </tr>
+        </body>
+      </table>
+    </div>
+
     <div class="box">
       <h2>H2 Tricho</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
@@ -20,6 +47,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
     <h5>H5 Tricho</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
+
     <h6>H6 Tricho</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
   </div>

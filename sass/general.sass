@@ -6,9 +6,11 @@ html
   overflow-x: hidden
   overflow-y: scroll
   text-rendering: $render-mode
-
-p
+  color: $text-color
   line-height: $default-line-height
 
-  &:not(:last-child)
-    margin-bottom: $default-whitespace
+p:not(:last-child)
+  margin-bottom: $default-whitespace
+
+a
+  color: $primary

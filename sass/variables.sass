@@ -12,6 +12,8 @@ $default-line-height: $vertical-height
 
 $default-whitespace: #{$vertical-height}rem
 
+$default-height: $default-whitespace
+
 // Responsiveness
 
 // The container gap, which acts as the offset for breakpoints
@@ -28,13 +30,27 @@ $fullhd: 1344px + (2 * $gap)  !default
 // Colors
 
 $white: #fff
-$grey: rgb(192,192,192)
+$grey: rgba(192,192,192, 1)
+$grey-dark: rgba(128, 128, 128, 1)
+$grey-darker: rgba(64, 64, 64, 1)
 $purple: rgba(128, 0, 192, 1)
+
+// Derived colors
+
+$text-color: $grey-darker
+$primary: $purple
 
 // Borders
 
 $border-width: 1px
 $border-color: $grey
+
+$border-color-hover: $grey-dark
+
+// Shadow
+
+$shadow: 0 2px 3px rgba($grey, .2)
+$shadow-hover: 0 3px 5px rgba($grey, .4)
 
 // Radius
 
