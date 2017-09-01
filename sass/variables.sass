@@ -4,4 +4,38 @@ $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Ox
 $family-monospace: monospace !default
 $render-mode: optimizeLegibility !default
 
-$vertical-height: 1.5rem
+$font-size: 16px
+
+$vertical-height: 1.5
+
+$default-line-height: $vertical-height
+
+$default-whitespace: #{$vertical-height}rem
+
+// Responsiveness
+
+// The container gap, which acts as the offset for breakpoints
+$gap: $font-size * $vertical-height !default
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 3rem
+$desktop: 960px + (2 * $gap) !default
+// 1152px container + 3rem
+$widescreen: 1152px + (2 * $gap)  !default
+// 1344px container + 3rem
+$fullhd: 1344px + (2 * $gap)  !default
+
+// Colors
+
+$white: #fff
+$grey: rgb(192,192,192)
+$purple: rgba(128, 0, 192, 1)
+
+// Borders
+
+$border-width: 1px
+$border-color: $grey
+
+// Radius
+
+$radius: 4px

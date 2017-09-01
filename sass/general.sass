@@ -1,5 +1,6 @@
 html
   font-family: $family-sans-serif
+  font-size: $font-size
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   overflow-x: hidden
@@ -7,5 +8,7 @@ html
   text-rendering: $render-mode
 
 p
-  line-height: $vertical-height
-  margin-bottom: 1.5rem
+  line-height: $default-line-height
+
+  &:not(:last-child)
+    margin-bottom: $default-whitespace
