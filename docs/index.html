@@ -3,13 +3,14 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/tricho.css">
 </head>
-<body class="grid">
-  <a href="javascript: void(0);" id="grid-toggler" onclick="javascript:body.classList.toggle('grid');">
-    Toggle
-  </a>
+<body class="">
   <div class="container">
     <h1>H1 Tricho</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
+    <div class="columns">
+      <div class="column"><p>Column</p></div>
+      <div class="column"><p>Column</p></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
 
     <div class="content">
       <p>This is a content element with lots of stuff in it.</p>
@@ -19,22 +20,73 @@
         <li>A list of items</li>
       </ul>
       <p>
-        <a href="#" class="button">Button</a>
-        <button type="button" class="button">Button-element</button>
+        <button type="button" class="button">Button</button>
         <a href="#" class="button is-primary">Primary button</a>
+        <a href="#" class="button is-info">Info button</a>
+        <a href="#" class="button is-success">Success button</a>
+        <a href="#" class="button is-warning">Warning button</a>
+        <a href="#" class="button is-danger">Danger button</a>
+        <a href="#" class="button is-white">White button</a>
+        <a href="#" class="button is-black">Black button</a>
       </p>
       <table>
         <thead>
           <tr>
-            <th>Table head</th>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
           </tr>
         </thead>
-        <body>
+        <tfoot>
           <tr>
-            <td>Table data</td>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
           </tr>
-        </body>
-      </table>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+        </tbody>
+</table>
     </div>
 
     <div class="box">
@@ -51,5 +103,8 @@
     <h6>H6 Tricho</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget hendrerit massa, nec pellentesque odio. Morbi rhoncus eget leo nec porta. Cras vestibulum finibus vulputate. Duis fermentum porttitor arcu, quis ultricies tellus laoreet ut. Nunc consectetur elit odio, quis aliquet felis dignissim accumsan.</p>
   </div>
+  <a href="javascript: void(0);" id="grid-toggler" onclick="javascript:body.classList.toggle('grid');">
+    Toggle
+  </a>
 </body>
 </html>

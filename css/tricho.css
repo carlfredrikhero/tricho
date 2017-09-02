@@ -99,8 +99,15 @@ p:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-a {
-  color: #8000c0;
+a:not(.button) {
+  color: #0040c0;
+}
+
+a:not(.button):hover {
+  color: #002f8d;
+  border-bottom: 1px solid #002f8d;
+  margin-bottom: -3px;
+  padding-bottom: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -204,7 +211,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.content > div:not(:last-child) {
+.content > div:not(.columns):not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -246,6 +253,44 @@ h6 {
   margin-left: 12px;
 }
 
+.button.is-white {
+  background-color: #fff;
+  border-color: transparent;
+  color: #404040;
+}
+
+.button.is-white:hover {
+  background-color: #e6e6e6;
+}
+
+.button.is-white.is-light {
+  background-color: white;
+  color: #fff;
+}
+
+.button.is-white.is-light:hover {
+  background-color: white;
+}
+
+.button.is-black {
+  background-color: #404040;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-black:hover {
+  background-color: #272727;
+}
+
+.button.is-black.is-light {
+  background-color: silver;
+  color: #404040;
+}
+
+.button.is-black.is-light:hover {
+  background-color: #b3b3b3;
+}
+
 .button.is-primary {
   background-color: #8000c0;
   border-color: transparent;
@@ -253,7 +298,162 @@ h6 {
 }
 
 .button.is-primary:hover {
-  background-color: #6f00a7;
+  background-color: #5e008d;
+}
+
+.button.is-primary.is-light {
+  background-color: #eac0ff;
+  color: #8000c0;
+}
+
+.button.is-primary.is-light:hover {
+  background-color: #e2a7ff;
+}
+
+.button.is-info {
+  background-color: #0040c0;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-info:hover {
+  background-color: #002f8d;
+}
+
+.button.is-info.is-light {
+  background-color: #c0d5ff;
+  color: #0040c0;
+}
+
+.button.is-info.is-light:hover {
+  background-color: #a7c4ff;
+}
+
+.button.is-success {
+  background-color: #00c040;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-success:hover {
+  background-color: #008d2f;
+}
+
+.button.is-success.is-light {
+  background-color: #c0ffd5;
+  color: #00c040;
+}
+
+.button.is-success.is-light:hover {
+  background-color: #a7ffc4;
+}
+
+.button.is-warning {
+  background-color: #e0c000;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-warning:hover {
+  background-color: #ad9400;
+}
+
+.button.is-warning.is-light {
+  background-color: #fffbe0;
+  color: #e0c000;
+}
+
+.button.is-warning.is-light:hover {
+  background-color: #fff7c7;
+}
+
+.button.is-danger {
+  background-color: #c00040;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-danger:hover {
+  background-color: #8d002f;
+}
+
+.button.is-danger.is-light {
+  background-color: #ffc0d5;
+  color: #c00040;
+}
+
+.button.is-danger.is-light:hover {
+  background-color: #ffa7c4;
+}
+
+.columns {
+  display: flex;
+  margin-top: -12px;
+  margin-right: -12px;
+  margin-bottom: -12px;
+  margin-left: -12px;
+}
+
+.columns:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.column {
+  padding: 12px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.column .is-narrow {
+  flex-grow: 0;
+}
+
+table {
+  margin-top: -1px;
+}
+
+table.is-striped tbody tr:nth-child(even) td {
+  background-color: #f3f3f3;
+}
+
+table.is-bordered {
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+}
+
+table thead tr {
+  border-bottom: 2px solid silver;
+}
+
+table thead tr th {
+  padding: 12px 12px 11px 12px;
+}
+
+table.is-bordered thead tr {
+  border-top: 1px solid silver;
+  border-bottom: 0;
+}
+
+table tfoot tr {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid transparent;
+}
+
+table tfoot tr th {
+  padding: 11px 12px 12px 12px;
+}
+
+table.is-bordered tfoot tr {
+  border-bottom: 1px solid silver;
+}
+
+tbody tr {
+  border-top: 1px solid silver;
+}
+
+tbody tr td {
+  padding: 11px 12px 12px 12px;
 }
 
 body.grid {
@@ -263,14 +463,14 @@ body.grid {
   left: 0;
   bottom: 0;
   background-color: transparent;
-  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 0, 0, 0.5) 25%, rgba(255, 0, 0, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 0, 0, 0.5) 75%, rgba(255, 0, 0, 0.5) 76%, transparent 77%, transparent);
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 0, 0, 0.25) 25%, rgba(255, 0, 0, 0.25) 26%, transparent 27%, transparent 74%, rgba(255, 0, 0, 0.25) 75%, rgba(255, 0, 0, 0.25) 76%, transparent 77%, transparent);
   height: 100%;
   background-size: 48px 48px;
   background-position: 0 12px;
 }
 
 #grid-toggler {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background: #eee;

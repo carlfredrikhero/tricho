@@ -1,0 +1,19 @@
+.columns
+  display: flex
+  margin:
+    top: ($gap * -.5)
+    right: ($gap * -.5)
+    bottom: ($gap * -.5)
+    left: ($gap * -.5)
+
+  &:not(:last-child)
+    margin-bottom: ($gap * .5)
+
+.column
+  padding: ($gap * .5)
+  flex-grow: 1
+  flex-shrink: 1
+  flex-basis: 0
+
+  .is-narrow
+    flex-grow: 0

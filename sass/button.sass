@@ -30,10 +30,22 @@ $button-height: #{$vertical-height + 1}rem
   & + .button
     margin-left: $gap/2
 
-  &.is-primary
-    background-color: $primary
-    border-color: transparent
-    color: $white
 
-    &:hover
-      background-color: darken($primary, 5%)
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      border-color: transparent
+      color: $color-invert
+
+      &:hover
+        background-color: darken($color, 10%)
+
+      &.is-light
+        background-color: lighten($color, 50%)
+        color: $color
+
+        &:hover
+          background-color: lighten($color, 45%)
+

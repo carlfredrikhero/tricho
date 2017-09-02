@@ -12,5 +12,10 @@ html
 p:not(:last-child)
   margin-bottom: $default-whitespace
 
-a
-  color: $primary
+a:not(.button)
+  color: $blue
+  &:hover
+    color: darken($blue, 10%)
+    border-bottom: 1px solid darken($blue, 10%)
+    margin-bottom: -3px
+    padding-bottom: 2px

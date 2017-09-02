@@ -15,7 +15,6 @@ $default-whitespace: #{$vertical-height}rem
 $default-height: $default-whitespace
 
 // Responsiveness
-
 // The container gap, which acts as the offset for breakpoints
 $gap: $font-size * $vertical-height !default
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
@@ -32,13 +31,28 @@ $fullhd: 1344px + (2 * $gap)  !default
 $white: #fff
 $grey: rgba(192,192,192, 1)
 $grey-dark: rgba(128, 128, 128, 1)
-$grey-darker: rgba(64, 64, 64, 1)
+$black: rgba(64, 64, 64, 1)
 $purple: rgba(128, 0, 192, 1)
+$red: rgba( 192, 0,64, 1)
+$green: rgba(0, 192, 64, 1)
+$blue: rgba(0, 64, 192, 1)
+$yellow: rgba(224, 192, 0, 1)
 
 // Derived colors
 
-$text-color: $grey-darker
+$text-color: $black
 $primary: $purple
+$primary-invert: $white
+$info: $blue
+$info-invert: $white
+$success: $green
+$success-invert: $white
+$warning: $yellow
+$warning-invert: $white
+$danger: $red
+$danger-invert: $white
+
+$colors: ( "white": ($white, $black), "black": ($black, $white), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert))
 
 // Borders
 

@@ -1,0 +1,35 @@
+table
+  margin-top: -1px
+
+  &.is-striped tbody tr:nth-child(even) td
+    background-color: lighten($grey, 20%)
+
+  &.is-bordered
+    border-left: $border-width solid $border-color
+    border-right: $border-width solid $border-color
+
+  thead tr
+    border-bottom: ($border-width * 2) solid $border-color
+
+    th
+      padding: 12px 12px 11px 12px
+
+  &.is-bordered thead tr
+      border-top: $border-width solid $border-color
+      border-bottom: 0
+
+  tfoot tr
+    border-top: $border-width solid $border-color
+    border-bottom: $border-width solid transparent
+
+    th
+      padding: 11px 12px 12px 12px
+
+  &.is-bordered tfoot tr
+    border-bottom: $border-width solid $border-color
+
+tbody tr
+  border-top: $border-width solid $border-color
+
+  td
+    padding: 11px 12px 12px 12px

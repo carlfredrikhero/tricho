@@ -8,9 +8,9 @@ Default vertical grid: 24px
  - [x] Paragraph
  - [x] Container
  - [x] Box
- - [ ] Content
- - [ ] Buttons
- - [ ] Grid
+ - [x] Content
+ - [x] Buttons
+ - [x] Grid
  - [ ] Tables
 
 ## Content
